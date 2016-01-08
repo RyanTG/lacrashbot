@@ -29,9 +29,11 @@ If anyone wants to use these scripts as a starter kit for their own bots, feel f
 - In the new csv, **clean up the dates**. Right now, the timestamps look like this:
 	- time = 0000
 	- date = 0101
+
 We want it to look like:
 	- time = 00:00
 	- date = Jan 01
+
 So first you have to split the month from the day. In [LibreOffice Calc, use Text to Columns](https://help.libreoffice.org/Calc/Text_to_Columns). Then use the [decode-month.py script](https://github.com/RyanTG/lacrashbot/blob/master/decode-month.py) to convert the spelled out (to three letters) months; then insert that into your working csv. Then merge that field with the day field, to produce "Jan 01". Next, format the time field to be four digits, with a colon in the middle. Use this: 00\:00
 
 - **Decode the data**. The values in the data are more machine-readable than human-readable. For example, collision severity is 1, 2, or 3. By decoding those, we convert the numbers into strings. In [decode.py](https://github.com/RyanTG/lacrashbot/blob/master/decode.py) I'm choosing which fields I'm (probably) going to use, and decoding them in ways that will simplify the narration process. That file also carries over some fields that didn't need decoding. And it doesn't carry over a whole bunch of fields that we don't care about.
