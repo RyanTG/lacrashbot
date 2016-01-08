@@ -1,6 +1,6 @@
 # LA Crashbot
 
-LA Crashbot is a Twitter Bot that posts crashes as they occurred. The idea is to help people better understand the frequency at which people crash. The data used is two years old, so the crashes are "real-time." 
+LA Crashbot is a Twitter Bot that posts crashes as they occurred. The idea is to help people better understand the frequency at which people crash. The data used is two years old, so the crashes are "real-time." [See it in action here](https://twitter.com/lacrashbot).
 
 ### Basic overview
 
